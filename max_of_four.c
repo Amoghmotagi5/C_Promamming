@@ -1,6 +1,9 @@
 #include <stdio.h>
 
 int main(){
+   //#manual method
+    printf("Manual Method\n\n");
+
   int a,b,c,d;
   printf("ENTER FOUR NO\n");
   scanf("%d%d%d%d",&a,&b,&c,&d);
