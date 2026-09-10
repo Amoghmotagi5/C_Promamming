@@ -10,7 +10,14 @@ int main(){
         printf("You Have to enter %d numbers more\n",n-i);
         scanf("%d",&arr[i]);
     }
-
+     printf("Max of ");
+    for(int i=0;i<n;i++){
+        if(i!=n-1)
+            printf("%d,",arr[i]);
+        else
+            printf("%d",arr[i]);
+    }
+    
     for(int i=0;i<n;i++){
         for(int j=i+1;j<n;j++){
             if(arr[i]>arr[j]){
@@ -20,9 +27,6 @@ int main(){
             }
         }
     }
-    printf("Max of ");
-    for(int i=0;i<n-1;i++){
-        printf("%d,",arr[i]);
-    }
-    printf("%d is %d",arr[n-1],arr[n-1]);
+    
+    printf("is %d",arr[n-1]);
 }
